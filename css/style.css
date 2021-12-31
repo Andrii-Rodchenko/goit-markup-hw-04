@@ -3,7 +3,9 @@
 --title-text-color: #212121;
 --interactive-element-color: #2196F3;
 --footer-background-color: #2F303A;
---мain-font-size: 14px
+--мain-font-size: 14px;
+--hero-background-color: #C4C4C4;
+
 }
 
 h1,
@@ -78,6 +80,18 @@ color: var(--interactive-element-color);
 
 /* Header */
 
+/* icon */
+
+.link-contact-mail{
+content: "";
+display: flex;
+width: 16px;
+height: 12px;
+margin-right: 10px;
+fill: currentColor;
+}
+
+
 /* position Header */
 
 .header {
@@ -140,21 +154,23 @@ color: var(--interactive-element-color);
 }
 
 .link-contact {
-display: block;
+display: flex;
 padding-top: 32px;
 padding-bottom: 32px;
-
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color:var(--paragraph-text-color);
+align-items: center;
 }
 
 .link-contact:hover,
 .link-contact:focus {
 color: var(--interactive-element-color);  
 }
+
+
 
 /* Hero */
 
@@ -171,13 +187,25 @@ margin: 0 auto;
 max-width: 696px;
 }
 .section-hero{ 
-background-color: var(--footer-background-color);
 padding-top: 205px;
 padding-bottom: 200px;
+margin-left: auto;
+margin-right: auto;
+min-height: 600px;
+max-width: 1600px;
+
+background-color: var(--hero-background-color);
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+url(../images/hero.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+
 }
 
 .container-hero{
 text-align:center;
+
 }
 
 .button-hero {
@@ -196,22 +224,22 @@ padding: 10px 32px;
 
    /* Секция преимущества */
 
-.list {
+.benefits-list {
 display: flex;
 padding-left: 0;
    }
-.list .title {
+.benefits-list .title {
    margin-bottom: 10px;
 }
 
-.list .item:not(:last-child)
-{
-margin-right: 30px; 
+.benefits-list .benefits-item:not(:last-child)
+{margin-right: 30px; 
 }
 
-.list .item {
+.benefits-list .benefits-item{
 width: 270px;
-height: 101px;
+/* height: 101px; */
+list-style-type: none;
 }
 
    .benefits-section h3 {
@@ -231,6 +259,34 @@ letter-spacing: 0.03em;
 color: var(--paragraph-text-color)
    }
 
+/* подключение изображения */
+
+.benefits-item::before {
+   display: block;
+   content:"";
+   height: 120px;
+   background-position: center;
+   background-size: auto;
+   background-repeat: no-repeat;
+   background-color: #F5F4FA;
+   border-radius: 4px;
+   margin-bottom: 30px;
+
+}
+.benefits-item-antenna::before {
+   background-image: url(../images/antenna.svg);}
+
+   .benefits-item-clock::before{ 
+   background-image: url(../images/clock.svg);
+   }
+
+   .benefits-item-diagram::before {
+background-image: url(../images/diagram.svg)
+   }
+   .benefits-item-astronaut::before{
+      background-image: url(../images/astronaut.svg);
+   }
+   
 
    /* Чем мы занимаемся */
 
