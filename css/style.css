@@ -83,13 +83,17 @@ color: var(--interactive-element-color);
 /* icon */
 
 .link-contact-mail{
-content: "";
 display: flex;
-width: 16px;
-height: 12px;
 margin-right: 10px;
 fill: currentColor;
 }
+
+.link-contact-tel {
+display: flex;
+margin-right: 10px;
+fill: currentColor;
+}
+
 
 
 /* position Header */
@@ -319,22 +323,24 @@ color: var(--title-text-color);
    }
    
 
-   /* Наша команда */
-   
+                      /* Наша команда */
+
+
 .list-command {
 display: flex;
 padding-left: 0; 
 }
-
 .title-command {
 margin-bottom: 50px;
 }
-.list-command .item{
+.list-command .item-command{
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+list-style: none;
+background-color: #FFFFFF;
 }
 
-.list-command .item:not(:last-child) {
+.list-command .item-command:not(:last-child) {
    margin-right: 30px;
 }
 
@@ -362,9 +368,98 @@ letter-spacing: 0.03em;
 color: var(--paragraph-text-color);
    }
 
-   
+                     /* свойства иконок команды */
 
-   /* Footer */
+.list-command-icon {
+display: flex;
+list-style: none;
+justify-content:center;
+padding: 0px 30px 30px 32px;
+}
+
+.link-command-icon {
+background-color: #FFFFFF;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #AFB1B8;
+}
+
+.svg-command-icon {
+width: 20px;
+height: 20px;
+fill: currentColor;
+}
+
+.item-command-icon:not(:last-child) {
+margin-right: 10px;
+}
+
+.link-command-icon:hover{
+   background-color:#2196F3;
+   color: #FFFFFF;
+}  
+.link-command-icon:focus {
+   background-color:#2196F3;
+   color: #FFFFFF; 
+}  
+
+                                  /* section regular-customers   */
+
+.container-customers {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.title-customers {
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 1,16px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-bottom: 50px;
+}
+
+.list-customers {
+   display: flex; 
+   list-style: none;
+   justify-content: center;
+   padding: 0;
+}
+.link-customers {
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+padding: 16px 32px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #afb1b8;
+}
+
+.item-customers:not(:last-child) {
+margin-right: 30px   ;
+}
+
+.svg-customers-icon {
+fill: currentColor;
+}
+.link-customers:hover{
+color: #2196F3;
+border: 1px solid #2196F3;
+}
+.link-customers:focus{
+color: #2196F3;
+border: 1px solid #2196F3;
+}
+
+
+
+                                          /* Footer */
 
 .footer-list {
 display: inline-block;
@@ -424,7 +519,63 @@ color: var(--interactive-element-color);
 }
 
 
-/* Стили для портфолио */
+                                         /* icon footer */
+
+.container-footer {
+   display: flex;
+   align-items: center;
+}
+
+.list-footer-icon {
+   display: flex;
+   list-style: none;
+   margin-top: 20px;
+   padding: 0;
+}
+.link-footer-icon {
+   background-color: #44454E;
+width: 44px;
+height: 44px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.svg-footer-icon{
+   width: 20px;
+   height: 20px;
+   fill: #FFFFFF;
+}
+
+.link-footer-icon:hover {
+background-color: #2196F3;}
+.link-footer-icon:focus {
+background-color: #2196F3;}
+
+
+.title-footer-icon {
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+display: inline-block;}
+
+.item-footer-icon:not(:last-child) {
+margin-right: 10px;
+
+}
+
+.icon-position {
+   margin-left: 70px;
+}
+
+
+
+                                     /* Стили для портфолио */
 
 /* button */
 
@@ -476,11 +627,19 @@ margin-top: -30px;
 margin-left: -30px;
 }
 
-.section-achievements > .item{
+.section-achievements > .item-descriptionte{
 margin-top: 30px;
 margin-left: 30px;
 flex-basis: calc(100% / 3 - 30px);
+list-style: none;
 }
+
+
+.item-descriptionte:hover
+{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+
+.item-descriptionte:focus
+{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 
 .descriptionte-achievements{
 padding: 20px 24px;  

@@ -30,10 +30,20 @@
         </nav>
         <ul class="list-contact">
           <li class="item">
-            <a class="link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link-contact" href="mailto:info@devstudio.com">
+              <svg class="link-contact-mail" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="item">
-            <a class="link-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link-contact" href="tel:+380961111111">
+              <svg class="link-contact-tel" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -51,7 +61,7 @@
           </ul>
 
           <ul class="section-achievements">
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#">
                 <img src="./images/img(9).jpg" alt="технокряк" width="370" height="294" />
 
@@ -61,7 +71,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#">
                 <img
                   src="./images/img(1)(1).jpg "
@@ -75,7 +85,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#">
                 <img
                   src="./images/img(2)(1).jpg "
@@ -89,7 +99,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#">
                 <img src="./images/img(3)(1).jpg  " alt="наушники" width="370" height="294" />
                 <div class="descriptionte-achievements">
@@ -98,7 +108,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#">
                 <img src="./images/img(4)(1).jpg " alt="коробки" width="370" height="294" />
                 <div class="descriptionte-achievements">
@@ -107,7 +117,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#"
                 ><img src="./images/img(5)(1).jpg  " alt="монитор" width="370" height="294" />
 
@@ -119,7 +129,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#"
                 ><img src="./images/img(6)(1).jpg " alt="открытая книга" width="370" height="294" />
                 <div class="descriptionte-achievements">
@@ -128,7 +138,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#"
                 ><img
                   src="./images/img(7)(1).jpg "
@@ -142,7 +152,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="item-descriptionte">
               <a class="link-achievements" href="#"
                 ><img src="./images/img(8)(1).jpg  " alt="ноутбук" width="370" height="294" />
                 <div class="descriptionte-achievements">
@@ -155,28 +165,65 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container container-footer">
-        <a class="logo-footer" href="./index.html"> <span class="logo-web">Web</span>Studio </a>
-        <address class="address">
-          <ul class="footer-list">
-            <li class="item">
-              <a
-                class="address-item"
-                href="https://goo.gl/maps/D85SnUthi7dSxmGW8"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                г. Киев, пр-т Леси Украинки, 26
+        <div class="address-position">
+          <a class="logo-footer" href="./index.html"> <span class="logo-web">Web</span>Studio </a>
+          <address class="address">
+            <ul class="footer-list">
+              <li class="item">
+                <a
+                  class="address-item"
+                  href="https://goo.gl/maps/D85SnUthi7dSxmGW8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="item">
+                <a class="mailto-item" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="item">
+                <a class="tel-item" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="icon-position">
+          <h2 class="title-footer-icon">присоединяйтесь</h2>
+
+          <ul class="list-footer-icon">
+            <li class="item-footer-icon">
+              <a class="link-footer-icon" href="">
+                <svg class="svg-footer-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="mailto-item" href="mailto:info@example.com">info@example.com</a>
+            <li class="item-footer-icon">
+              <a class="link-footer-icon" href="">
+                <svg class="svg-footer-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item"><a class="tel-item" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <li class="item-footer-icon">
+              <a class="link-footer-icon" href="">
+                <svg class="svg-footer-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-footer-icon">
+              <a class="link-footer-icon" href="">
+                <svg class="svg-footer-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
