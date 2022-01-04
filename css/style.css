@@ -644,20 +644,8 @@ list-style: none;
 
 .descriptionte-achievements{
 padding: 20px 24px;  
-
-border-right-width: 1px;
-border-right-style: solid;
-border-right-color: #EEEEEE;
-
-border-bottom-width: 1px;
-border-bottom-style: solid;
-border-bottom-color: #EEEEEE;
-
-border-left-width: 1px;
-border-left-style:solid;
-border-left-color: #EEEEEE;
-}
-
+border: 1px solid #EEEEEE;
+border-top: none;}
 
 .text-description {
 margin-top: 4px;
